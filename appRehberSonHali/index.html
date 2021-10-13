@@ -1,0 +1,111 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+        crossorigin="anonymous"></script>
+
+    <title>BUNDAN SONRASI ALLAHU TEAALAYA EMANET</title>
+    <script src="app.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark bg-primary  ">
+        <div clas="container text-center ">
+            <a href="#" class="navbar-brand  ">
+                REHBER LİSTESİ
+            </a>
+        </div>
+    </nav> <br>
+    <!-- Modal -->
+    <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-success.bg-gradient">
+                    <h5 class="modal-title " id="exampleModalLabel">KİŞİ BİLGİLERİ</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body bg-success p-2 text-dark bg-opacity-25">
+
+                    <form id="kayıtForm" autocomplete="off">
+                        <div class="form-row col-md-6">
+                            <input type="text" id="ad" name=ad class="form-control" placeholder="AD" required>
+
+                        </div>
+
+                        <div class="form-row col-md-6">
+                            <input type="text" id="soyad" class="form-control" placeholder="SOYAD" required>
+
+                        </div>
+                        <div class="form-row col-md-6">
+                            <input type="mask" id="no" class="form-control" placeholder="+90(___) ___-____"
+                                data-slots="_">
+                        </div>
+                        <div class="form-row col-md-6">
+                            <input type="email" id="email" class="form-control" placeholder="E-MAİL" value="">
+                        </div><br>
+                        <div class="row col-auto">
+
+                            <button onclick="kisiekle()" id="add" type="submit" class="btn btn-primary opacity-100">
+                                <i class="fas fa-user-plus"></i>
+                                KİŞİYİ KAYDET
+                            </button>
+
+                        </div>
+
+                    </form>
+                    <div class="row col-auto">
+
+
+                        <button onclick="kisiGuncelle()" id="edit" data-bs-dismiss="modal" type="submit"
+                            class="btn btn-primary opacity-100 ">
+                            <i class="fas fa-edit"></i>
+                            KİŞİYİ GÜNCELLE</button>
+                        <button type="button" class="btn btn-secondary opacity-75" data-bs-dismiss="modal">
+                            <i class="far fa-window-close"></i> KAPAT</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- TABLE-->
+    <table class="table" id="myTable">
+        <thead>
+            <tr>
+                <th scope="row">İsim</th>
+                <th scope="row">Soyisim</th>
+                <th scope="row">E-Mail</th>
+                <th scope="row">Numara</th>
+                <th scope="row">Edit</th>
+            </tr>
+        </thead>
+        <tbody id="item-list">
+
+        </tbody>
+    </table>
+    <!-- Button trigger modal -->
+    <div class="d-grid gap-2 d-md-flex justify-content-md-evenly">
+        <button type="button" id="addPerson" class="btn btn-outline-primary me-md-2" data-bs-toggle="modal"
+            data-bs-target="#exampleModal" onclick="openModel()">
+            <i class="fas fa-plus"></i>
+            KİŞİ EKLE
+        </button>
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>
