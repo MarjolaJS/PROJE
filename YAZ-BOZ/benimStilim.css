@@ -1,0 +1,70 @@
+body, html {
+  height: 100%;
+  margin: auto;
+}
+
+.bg {
+  background-image: url("https://img.gecce.com/2014/07/22/ece-erken-al-192218YJ.jpg");
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+#output{
+  width: 150px;
+  height: 150px;
+}
+#output2{
+ width: 150px;
+ height: 150px;
+}
+#output3{
+  width: 150px;
+  height: 150px;
+}
+#output4{
+  width: 150px;
+  height: 150px;
+}
+#img1{
+  width: 150px;
+  height: 150px;
+}
+#img2{
+  width: 150px;
+  height: 150px;
+}
+#img3{
+  width: 150px;
+  height: 150px;
+}
+#img4{
+  width: 150px;
+  height: 150px;
+}
+
+.user1{
+  position: absolute;
+    left: 5%;
+    top: 20%;
+  
+}
+.user2{
+  position: absolute;
+    left: 38%;
+    top: 10%;
+  
+}
+.user3{
+  position: absolute;
+    left: 75%;
+    top: 15%;
+  
+}
+.user4{
+  position: absolute;
+    left: 60%;
+    top: 35%;
+  
+}
